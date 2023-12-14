@@ -1,0 +1,670 @@
+*,html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+:root{
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ash{
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(7, 6, 6);
+    color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    border-bottom: 1px solid rgb(70, 69, 69);
+
+}
+
+.ashraf{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ash .ashraf h1{
+    font-size: 1.2rem;
+    letter-spacing: 0.8rem;
+    padding-left: 6rem;
+}
+.desk_nav{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 35rem;
+    height: 4rem;
+}
+.desk_nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+.desk_nav ul li{
+    list-style: none;
+}
+.desk_nav .language{
+    display: flex;
+    width: 15rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+.desk_nav .language a img{
+    width: 1.2rem;
+    padding-bottom: 1rem;
+}
+.desk_nav .language a{
+    text-decoration: none;
+    color: white;
+}
+.desk_nav .language span{
+    padding-bottom: 1.2rem;
+}
+.desk_nav i{
+    display: none;
+}
+
+.hero{
+    top: 8rem #f0f2f4;
+    width: 100%;
+    height: 60rem;
+    position: relative;
+    background-color: rgb(1, 1, 1);
+    color: white;
+    
+}
+.Container{
+    display: flex;
+    justify-content: space-between;
+    height: 52rem;
+
+
+}
+
+.hero .Container .left-container{
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 7rem;
+}
+.hero .Container .left-container span{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: gray;
+}
+.hero .Container .left-container span strong{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #dbd7d7;
+}
+
+.hero .Container .left-container span i{
+    font-size: 2rem;
+}
+.hero .Container .left-container h1{
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #dbd7d7;
+}
+.hero .Container .left-container img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    animation: zoom-in 4s infinite;
+}
+
+.hero .Container .left-container h1 i{
+font-size: 4rem;
+}
+.hero .Container .left-container p{
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    color: #dbd7d7;
+}
+.hero .Container .left-container .start{
+    color: #dbd7d7;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.hero .Container .left-container .start i{
+    font-size: 2rem;
+}
+.hero .Container .right-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin-top: 7rem;
+    overflow:hidden;
+    margin-right: 5%;
+    position: relative;
+}
+.rotate{
+    position: absolute;
+    top: 3rem;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.rotate .circle{
+    position: relative;
+    top: 5px;
+}
+.rotate .arrow{
+    position: absolute;
+    top: 32px;
+    margin-left: 1.7rem;
+}
+/*.hero .container.right-container.slide-show{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    animation:slide-img 9s infinite;
+}
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(-13rem);
+  }*/
+
+
+  @keyframes slide-img {
+    0%, 100%{
+      transform: translateX(0%) scale(1);
+    }
+    33.33%, 100.1%{
+      transform: translateX(-100%) scale(1.2);
+    }
+    66.66%, 100.2%{
+      transform: translateX(-200%) scale(1);
+    }
+
+  }
+  .right-container .carousel-inner #profile{
+    transform: translateY(-15rem);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section3{
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(240, 240, 235, 0.904);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.section3 .rolling-stone{
+    display: flex;
+    width: 150%;
+    height: 50%;
+    gap: 7rem;
+    animation: slide 10s linear infinite;
+}
+
+.section3 .rolling-stone .items{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+
+    }
+    
+    100%{
+       transform: translateX(-50%);
+    }
+    }
+.section3 .rolling-stone .items i, .section3 .rolling-stone .items p{
+    font-size: 1.5rem;
+    color: #f23f3f;
+}
+.skill{
+    width: 90%;
+    margin-left: 5%;
+}
+.skill .container4{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-title{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill .container4 .skill-title h2{
+    font-size: 2.5rem;
+    color: rgb(66, 67, 68);
+    
+}
+.skill .container4 .skill-title p{
+    margin-right: 5rem;
+    font-size: 2rem;
+}
+.skill .container4 .skill-title p span{
+    color: #c71212;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ .skill .container4 .first-row, .skill .container4 .row2{
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+ }
+ .skill .container4 .first-row .card1{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: rgb(233, 231, 231);
+ }
+ 
+ .skill .container4 .first-row .card1 h2{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            margin-left: 2rem;
+ }
+ .skill .container4 .first-row .card1 p{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+
+ }
+ .skill .container4 .first-row .card1 i{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+ }
+
+
+ .skill .container4 .first-row .card2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: rgb(233, 231, 231);
+ }
+ 
+ .skill .container4 .first-row .card2 h2{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            margin-left: 2rem;
+ }
+ .skill .container4 .first-row .card2 p{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+
+ }
+ .skill .container4 .first-row .card2 i{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+ }
+
+ .skill .container4 .first-row .card3{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: rgb(233, 231, 231);
+ }
+ 
+ .skill .container4 .first-row .card3 h2{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            margin-left: 2rem;
+ }
+ .skill .container4 .first-row .card3 p{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+
+ }
+ .skill .container4 .first-row .card3 i{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+ }
+
+
+
+
+ .skill .container4 .row2 .card1{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: rgb(233, 231, 231);
+ }
+ 
+ .skill .container4 .row2 .card1 h2{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            margin-left: 2rem;
+ }
+ .skill .container4 .row2 .card1 p{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+
+ }
+ .skill .container4 .row2 .card1 i{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+ }
+ .skill .container4 .row2 .card2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: rgb(233, 231, 231);
+ }
+ 
+ .skill .container4 .row2 .card2 h2{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            margin-left: 2rem;
+ }
+ .skill .container4 .row2 .card2 p{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+
+ }
+ .skill .container4 .row2 .card2 i{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+ }
+
+ .skill .container4 .row2 .card3{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: rgb(233, 231, 231);
+ }
+ 
+ .skill .container4 .row2 .card3 h2{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            margin-left: 2rem;
+ }
+ .skill .container4 .row2 .card3 p{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+
+ }
+ .skill .container4 .row2 .card3 i{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+ }
+
+ hr{
+    width: 100%;
+    margin-top:5rem;
+    border:.1px solid rgba(212, 212, 208, 0.757);
+ }
+
+.section5{
+    width: 100%;
+    height: 40rem;
+    margin-top: 5rem;
+    display: flex;
+}
+ 
+.section5 .abt-img{
+    width: 45%;
+    height: 100%;
+    margin-left: 4%;
+    position: relative;
+    overflow: hidden;
+}
+.section5 .abt-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: zoom-in 8s infinite;
+}
+@keyframes zoom-in {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.section5 .abt-text{
+    width: 35%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.section5 .abt-text .p1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem 0 0;
+}
+.section5 .abt-text .p1 img{
+    width: 2rem;
+    padding-top:1rem;
+}
+.section5 .abt-text h2{
+    padding:2rem 0 0;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+.section5 .abt-text .p2{
+    font-size: 1.5rem;
+    padding: 10px 0 0 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+.section5 .abt-text .p3{
+    text-align: justify;
+    color:rgb(112, 110, 110);
+    margin-bottom: 4rem;
+    
+}
+.section5 .abt-text a{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.cases{
+    width: 100%;
+    height: auto;
+}
+.cases .cases-header{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   background-color: rgba(243, 243, 238, 0.942);
+}
+.cases .cases-header p{
+    font-size: 3rem;
+    padding: 3rem;
+    margin: 0 3rem;
+}
+
+
+
+
+.section5 .abt-text ul{
+    margin: 3rem 0;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+.section5 .abt-text ul li{
+    background-color: lightgray;
+    padding: 2rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.case1{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(243, 243, 238, 0.942);
+}
+.case1 .aga-khan{
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+    margin: 3% 5% 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.case1 .aga-khan img{
+    object-fit: cover;
+    position: absolute;
+}
+.case1 .agatext{
+    width: 40%;
+}
+.case1 .agatext h1{
+    margin:5% 0;
+    font-size: 2rem;
+}
+.case1 .agatext ul{
+    display: flex;
+    list-style: none;
+    gap:3rem;
+}
+.case1 .agatext ul li{
+    width: 10rem;
+    background-color: lightcoral;
+    height: 3rem;
+    text-align:center ;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.case1 .agatext ul li i{
+    font-size: 1.5rem;
+}
+.case1 .agatext p{
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding-right: 3rem;
+    color: rgb(128, 122, 122);
+    line-height: 1.9rem;
+}
+.case1 .agatext h2{
+    margin: 3rem 0 5rem ;
+    font-size: 1.5rem;
+}
+.case1 .agatext a{
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: lightcoral;
+    text-decoration: none;
+}
+.case1 .agatext a i{
+    font-size: 1.5rem;
+}
+
+.progress{
+    width: 100%;
+    height: 2px;
+}
+.progress .progress-ul .active{
+    height: 2px;
+    background-color: rgb(135, 157, 222);
+
+}
+.progress .progress-ul .step2{
+    height: 2px;
+    background-color: rgb(220, 217, 217)
+}
+.footer{
+    width: 100%;
+    background-color: black;
+    color: rgb(191, 187, 187);
+}
+.footer h2{
+    font-size: 2rem;
+    padding: 4rem;
+    letter-spacing: 0.5rem;
+}
+.footer ul{
+    font-size: 2rem;
+    margin-left: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 2rem;
+}
+.footer ul li a{
+    font-size: 2rem;
+    color: rgb(148, 145, 145);
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer ul li i{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+ 
